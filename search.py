@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #
-# Searches json file for specific string
+# Searches json file for specific string and returns copy+pastable value for html
 import json
 import sys
 
@@ -16,4 +16,4 @@ else:
 
 for k in faicons:
     if name in k:
-        print(faicons[k])
+        print("fa", faicons[k].replace('.',''))

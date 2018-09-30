@@ -17,3 +17,5 @@ for rule in css:
 
 with open("fa-icons.json", "w") as json_file:
 	json.dump(names, json_file, indent=4)
+
+print("Converted FontAwesome CSS to JSON")
